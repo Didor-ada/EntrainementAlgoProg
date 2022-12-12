@@ -181,3 +181,23 @@ def somme(c1, c2):
     sommeC1C2 = ((c1[0]+c2[0]), (c1[1]+c2[1]), (c2[2]+c2[2]))
     return sommeC1C2
 print(somme((150,135,100),(200, 230, 15)))
+
+# 2) Listes : lecture simple et modification en place
+lst = [2, 5, 6, 3, 10, 15]
+lst2 = []
+for i in range(len(lst)):
+    lst2.append(lst[i]*2)
+print(lst2)
+
+def doubler(liste):
+    lst = []
+    for i in range(len(liste)):
+        lst.append(liste[i]*2)
+    return lst
+print(doubler([2,4,6,8,10,12,15]))
+
+def strToIntLst(lstToInt):
+    for i in range(len(lstToInt)):
+        lstToInt[int(i)]
+    return lstToInt
+print(strToIntLst(["12", "1", "5", "22"]))
